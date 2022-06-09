@@ -1,0 +1,12 @@
+const {ccclass, property} = cc._decorator;
+
+@ccclass
+export default class GameStart1 extends cc.Component {
+
+    start() {
+        this.schedule(function() {
+            cc.director.loadScene("Stage2");
+        }, 2);
+    }
+    
+}
